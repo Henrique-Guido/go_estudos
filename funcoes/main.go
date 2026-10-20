@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	dividir, _ := divisao(50, 4)
-
-	fmt.Printf("50 dividido por 5 é %v", dividir)
+	name, age, email, pass := getData("Henrique Guido", 24, "henriqueguido.tech@gmail.com", true)
+	
+	fmt.Printf(" Nome: %v \n Idade: %v \n E-mail: %v \n Passe: %v", name, age, email, pass)
 
 }
