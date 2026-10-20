@@ -2,12 +2,15 @@ package main
 
 import "fmt"
 
-// funções  // se tiver retorno precisa especificar o tipo do retorno
-func somar(n1 int, n2 int) int {
-	return n1 + n2
+func id(name, email string) (string, string) {
+	return name, email // para cada valor retornado, podemos usar uma variável diferente
 }
 
 func main() {
-	result := somar(10, 100)
-	fmt.Println(result)
+
+	name, email := id("Henrique Guido", "henrique@gmail.com")
+
+	fmt.Println(name)
+	fmt.Println(email)
+
 }
